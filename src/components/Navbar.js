@@ -61,7 +61,10 @@ const Navbar = ({ toggleSidebar, toggleSidebarSm, openSidebarSm }) => {
         <Dialog open={open} onClose={toggleDialog} className='modalDialog'>
           <div className='modalDialogContent'>
             <div className='dialog-header'>
-              Chaldal <span role='img'>🥚</span>
+              Chaldal{" "}
+              <span role='img' aria-label='chaldal'>
+                🥚
+              </span>
             </div>
             <ul>
               <li>
