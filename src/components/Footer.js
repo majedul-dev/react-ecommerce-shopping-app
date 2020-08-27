@@ -52,10 +52,10 @@ const Footer = () => {
         </div>
         <div className='right'>
           <div className='get-apps'>
-            <a href=''>
+            <a href='https://majedulislam.co'>
               <img src={anduraideApp} alt='' />
             </a>
-            <a href=''>
+            <a href='https://majedulislam.co'>
               <img src={appleApp} alt='' />
             </a>
           </div>
@@ -68,16 +68,16 @@ const Footer = () => {
             </div>
           </div>
           <div className='social'>
-            <a href=''>
+            <a href='https://majedulislam.co'>
               <img src={facebook} alt='' />
             </a>
-            <a href=''>
+            <a href='https://majedulislam.co'>
               <img src={youtube} alt='' />
             </a>
-            <a href=''>
+            <a href='https://majedulislam.co'>
               <img src={twitter} alt='' />
             </a>
-            <a href=''>
+            <a href='https://majedulislam.co'>
               <img src={instagram} alt='' />
             </a>
           </div>

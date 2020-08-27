@@ -69,7 +69,7 @@ const SpecialOffers = () => {
                     </div>
                   </div>
                   <div className='cart-action'>
-                    <a href='#'>
+                    <a href='https://majedulislam.co'>
                       <i className='fas fa-cart-plus'></i>
                       <p>Add to bag</p>
                     </a>
