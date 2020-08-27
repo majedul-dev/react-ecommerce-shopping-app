@@ -1,0 +1,21 @@
+.sub-banner {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.8rem !important;
+  margin: auto;
+}
+.min-sub-banner {
+  width: 100vw;
+}
+.max-sub-banner {
+  width: 77vw;
+}
+.sub-banner img {
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .sub-banner {
+    flex-direction: column;
+  }
+}

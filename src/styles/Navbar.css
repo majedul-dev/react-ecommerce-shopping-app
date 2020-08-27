@@ -1,0 +1,177 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-items: center;
+  justify-content: space-between;
+  background: var(--secondary-color);
+  height: 60px;
+  width: 100%;
+  z-index: 9999999;
+}
+.bar {
+  padding: 15px;
+}
+.bar > button {
+  background: var(--secondary-color);
+  padding: 4px 6px;
+  border: none;
+  cursor: pointer;
+}
+.bar > .menu-bar-sm {
+  display: none;
+}
+.bar > button:hover {
+  background: var(--hover-color);
+}
+.chaldal-logo {
+  display: flex;
+  align-self: center;
+  padding-right: 1.3rem;
+}
+.chaldal-logo > img {
+  height: 40px;
+}
+.searchBar {
+  display: flex;
+  flex: 1;
+  align-self: center;
+  margin-right: 0.7rem;
+}
+.searchBar > input {
+  border: none;
+  padding: 12px;
+  width: 100%;
+  border-radius: 3px;
+}
+.search-icon {
+  display: flex;
+  align-self: center;
+  margin-left: -2rem;
+  background: #fff;
+}
+.three-dot {
+  display: none;
+}
+.more-vert-icon {
+  display: none !important;
+}
+.helpAria {
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  height: 8vh;
+  text-decoration: none;
+  font-size: 0.9 rem;
+  font-weight: 600;
+  border-left: 1px solid rgba(153, 153, 153, 0.219);
+  border-right: 1px solid rgba(153, 153, 153, 0.219);
+
+  transition: var(--transition);
+}
+.helpAria:hover {
+  background: var(--hover-color);
+}
+.helpAria > span {
+  color: var(--gray-dark);
+  margin-left: 5px;
+}
+.help-icon {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: rgba(153, 153, 153, 0.719);
+  /* background: #fff; */
+}
+.languageSelection {
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+}
+.languageSelection > span {
+  padding: 0 3px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.languageSelection > span:nth-child(1) {
+  color: var(--primary-color);
+}
+.signup-btn {
+  background: var(--primary-color);
+  padding: 0 2.4rem;
+  display: flex;
+  align-items: center;
+  border: none;
+  color: var(--white-color);
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: var(--transition);
+}
+.signup-btn:hover {
+  background: #f3474d;
+}
+
+/* Modal Dialog styles */
+.modalDialog {
+  margin: auto;
+  overflow: hidden;
+}
+.modalDialogContent > ul {
+  width: 400px;
+  padding: 0.8rem 1rem;
+  list-style: none;
+}
+.dialog-header {
+  background: var(--dark-color);
+  color: #ffffff;
+  font-size: 1.4rem;
+  padding: 1rem 0.8rem;
+}
+
+.modalDialogContent > ul > li {
+  padding: 0.8rem 0;
+  display: flex;
+}
+.modalDialogContent > ul > li span {
+  margin-left: 5px;
+}
+
+@media (max-width: 992px) {
+  .helpAria,
+  .languageSelection {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    height: 55px;
+  }
+  .chaldal-logo,
+  .signup-btn {
+    display: none;
+  }
+  .three-dot {
+    display: block;
+    background: transparent;
+    border: none;
+    outline: none;
+    margin-right: 0.7rem;
+  }
+  .more-vert-icon {
+    display: block !important;
+    font-size: 1.5rem !important;
+  }
+  .bar > .menu-bar-lg {
+    display: none !important;
+  }
+  .bar > .menu-bar-sm {
+    display: block;
+  }
+  .bar > .menu-bar-sm button {
+    outline-style: none;
+  }
+  .bar > .menu-bar-sm button:hover {
+    background: var(--hover-color);
+  }
+}

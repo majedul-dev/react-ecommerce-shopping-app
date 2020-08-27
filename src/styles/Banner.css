@@ -1,0 +1,57 @@
+.banner {
+  margin-top: 60px;
+  background: url("https://cdn.chaldal.net/asset/Egg.Grocery.Fabric/Egg.Grocery.Web/1.5.0+Release-1217/Default/stores/chaldal/components/landingPage2/LandingPage/images/landingBannerTop.jpg");
+  background-size: cover;
+  height: 325px;
+  width: 100%;
+  padding-top: 100px;
+}
+.banner-content {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  color: #000;
+  top: 10rem;
+  right: 15%;
+  z-index: 1;
+  transition: var(--transition);
+}
+.min-banner-content {
+  width: 50%;
+  right: 20%;
+}
+.banner-content > h1 {
+  font-size: 2.4rem;
+}
+
+.banner-searchBar {
+  display: flex;
+  flex: 1;
+  margin: auto;
+  margin-top: 1rem;
+}
+.banner-searchBar > input {
+  width: 100%;
+  border: none;
+  border: var(--border);
+  padding: 0.8rem;
+  border-radius: 5px;
+}
+
+@media (max-width: 992px) {
+  .banner-content > h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner {
+    margin-top: 55px;
+  }
+  .banner-content > h1 {
+    font-size: 1.2rem;
+  }
+  .search-icon {
+    padding-left: 5px;
+  }
+}

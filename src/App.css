@@ -1,0 +1,93 @@
+:root {
+  --primary-color: #ff686e;
+  --primary-color-2: #fa3239;
+  --secondary-color: #fdd670;
+  --green-color: #82a900;
+  --hover-color: #fcc846;
+  --dark-color: #4f4f4f;
+  --gray-dark: #615e58;
+  --white-color: #ffffff;
+  --border: 1px solid rgba(153, 153, 153, 0.63);
+  --transition: 0.3s ease;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #615e58;
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+  color: var(--dark-color);
+}
+ul {
+  list-style: none;
+}
+button {
+  background: transparent;
+  border: none;
+}
+.text-red {
+  color: var(--primary-color) !important;
+}
+.container {
+  display: flex;
+  width: 100vw;
+}
+.left-section {
+  width: 19vw;
+  transition: var(--transition);
+  border-right: var(--border);
+}
+.right-section {
+  width: 100%;
+  overflow-x: hidden;
+}
+.toggleSidebar {
+  margin-left: -19vw;
+}
+
+/* Sidebar Category Style */
+.fa-style {
+  padding-right: 0.5rem;
+}
+
+/* section */
+.section {
+  padding: 0.3rem 0 3rem 0;
+}
+.section-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 100%;
+}
+.section-content {
+  margin-top: 55px;
+}
+
+@media (max-width: 767px) {
+  .left-section {
+    display: none;
+  }
+  .section-content {
+    padding: 0 0.6rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .section-center {
+    width: 95vw;
+  }
+  .section-content {
+    padding: 0 0.6rem;
+  }
+}

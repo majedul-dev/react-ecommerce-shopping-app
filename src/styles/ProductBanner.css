@@ -1,0 +1,47 @@
+.product-banner {
+  display: flex;
+  justify-content: center;
+}
+.product-banner > img {
+  object-fit: cover;
+  width: auto;
+}
+.prduct-title {
+  position: relative;
+  margin: 1.5rem;
+}
+.prduct-title > h1 {
+  text-align: center;
+  margin: 0 1rem;
+  font-weight: 300;
+}
+.prduct-title h1::after,
+.prduct-title h1::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  top: 1.5rem;
+  width: 90%;
+  background: rgba(88, 88, 88, 0.61);
+}
+.prduct-title h1::before {
+  margin-left: -93%;
+}
+.prduct-title h1::after {
+  margin-left: 3%;
+}
+
+@media (max-width: 768px) {
+  .product-banner {
+    margin-top: -10px;
+  }
+}
+@media (max-width: 500px) {
+  .prduct-title > h1 {
+    font-size: 1.2rem;
+  }
+  .prduct-title h1::after,
+  .prduct-title h1::before {
+    top: 1rem;
+  }
+}

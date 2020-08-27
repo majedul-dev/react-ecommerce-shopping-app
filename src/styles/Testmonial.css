@@ -1,0 +1,55 @@
+.testmonial-slider {
+  width: 60vw;
+  margin: auto;
+}
+.testmonial {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.thambnail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.thambnail > .thambnail-img {
+  height: 120px;
+  width: 120px;
+  border-radius: 100%;
+  margin-bottom: 0.5rem;
+  margin-right: 2rem;
+  /* position: absolute; */
+}
+.testmonial > .message {
+  background: rgb(228, 228, 228);
+  display: flex;
+  align-self: center;
+  padding: 1.5rem 1rem;
+  border-radius: 5px;
+  position: relative;
+}
+.testmonial > .message::after {
+  content: "";
+  position: absolute;
+  height: 0.8rem;
+  width: 0.8rem;
+  background: rgb(228, 228, 228);
+  left: -0.4rem;
+  transform: rotate(45deg);
+  display: flex;
+  align-self: center;
+}
+
+@media (max-width: 850px) {
+  .testmonial {
+    display: flex;
+    flex-direction: column;
+  }
+  .thambnail {
+    margin-bottom: 1rem;
+  }
+  .testmonial > .message::after {
+    top: -0.4rem;
+    left: calc(100% - 50%);
+  }
+}

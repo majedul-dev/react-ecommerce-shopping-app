@@ -1,0 +1,9 @@
+.section-title {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.section-title > h1 {
+  font-weight: 300;
+  font-size: 1.5rem;
+  color: #000000;
+}

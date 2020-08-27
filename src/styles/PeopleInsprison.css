@@ -1,0 +1,87 @@
+.section-title > h1 > i {
+  color: var(--primary-color-2);
+  font-size: 2.2rem;
+  text-align: center;
+}
+.persolanl-insprison {
+  width: 100%;
+}
+.mainTile {
+  position: relative;
+  display: block;
+}
+.tile {
+  display: inline-block;
+  width: calc(100% / 3);
+  position: relative;
+}
+.tileHeaderImg {
+  position: relative;
+}
+.tileHeaderImg > img {
+  width: 100%;
+  height: auto;
+}
+.tileHeaderText {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.829);
+  height: calc(100% - 30%);
+  width: 100%;
+  padding: 1.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  /* justify-content: space-around; */
+}
+.tileHeaderText > h3 {
+  margin-bottom: 2rem;
+  font-weight: 400;
+}
+.tileHeaderText > p {
+  color: #000;
+}
+
+.border1 {
+  border-bottom: 3px solid var(--secondary-color);
+}
+.border2 {
+  border-bottom: 3px solid var(--green-color);
+}
+.border3 {
+  border-bottom: 3px solid var(--primary-color);
+}
+
+@media (max-width: 1200px) {
+  .tileHeaderText {
+    padding: 0.8rem 1rem;
+  }
+  .tileHeaderText > h3 {
+    margin-bottom: 0.7rem;
+    font-size: 1.2rem;
+  }
+  .tileHeaderText > p {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 880px) {
+  .tile {
+    width: 100%;
+  }
+  .tileHeaderText > h3 {
+    padding-bottom: 1rem;
+    font-size: 2rem;
+  }
+  .tileHeaderText > p {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 768px) {
+  .tileHeaderText > h3 {
+    font-size: 1.2rem;
+  }
+  .tileHeaderText > p {
+    font-size: 0.8rem;
+  }
+}

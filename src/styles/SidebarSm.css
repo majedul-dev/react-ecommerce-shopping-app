@@ -1,0 +1,29 @@
+.sidebar-sm {
+  display: none;
+  background: #fff;
+  border-right: var(--border);
+}
+
+@media (max-width: 767px) {
+  .sidebar-sm {
+    display: block;
+    display: block;
+    position: fixed;
+    left: 0;
+    width: 40%;
+    height: 100%;
+    z-index: 999;
+    opacity: 0;
+    transition: var(--transition);
+    transform: translateX(-100%);
+  }
+  .show-sidebar-sm {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@media (max-width: 440px) {
+  .sidebar-sm {
+    width: 50%;
+  }
+}

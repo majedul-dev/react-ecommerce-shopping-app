@@ -1,0 +1,82 @@
+.chaldalApps {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 75%;
+  margin: auto;
+}
+.get-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: 1rem;
+}
+.app-title {
+  font-weight: 300;
+  font-size: 1.6rem;
+  color: #000000;
+  margin-bottom: 3rem;
+}
+.input-phone-number > div {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+}
+.input-phone-number input {
+  padding: 1rem;
+  border: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  background: rgba(233, 233, 233, 0.651);
+  outline: none;
+  width: 15rem;
+}
+.input-phone-number button {
+  padding: 1rem;
+  background: var(--primary-color);
+  outline-style: none;
+  color: #ffffff;
+  font-size: 1rem;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.input-phone-number > small {
+  color: rgba(104, 102, 102, 0.507);
+}
+.app-link {
+  display: flex;
+  margin-top: 2rem;
+  justify-content: space-between;
+}
+.app-link img {
+  width: 14vw;
+}
+.appImg {
+  max-width: 22rem;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-self: flex-end;
+  margin-left: auto;
+}
+
+@media (max-width: 768px) {
+  .chaldalApps {
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .app-link img {
+    width: 40vw;
+  }
+
+  .appImg {
+    width: 10rem;
+    margin-left: calc(100% - 80%);
+    align-self: center;
+  }
+}
