@@ -18,10 +18,10 @@ const ChaldalApps = () => {
             <small>e.g. +8801672955886</small>
           </div>
           <div className='app-link'>
-            <a href='#'>
+            <a href=''>
               <img src={anduraidAppImg} alt='' />
             </a>
-            <a href='#'>
+            <a href=''>
               <img src={appleAppImg} alt='' />
             </a>
           </div>

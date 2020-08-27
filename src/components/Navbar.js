@@ -83,7 +83,7 @@ const Navbar = ({ toggleSidebar, toggleSidebarSm, openSidebarSm }) => {
             </ul>
           </div>
         </Dialog>
-        <a href='#' alt='' className='helpAria'>
+        <a href='' alt='' className='helpAria'>
           <HelpIcon className='help-icon' />
           <span>Help & More</span>
         </a>
