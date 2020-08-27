@@ -1,6 +1,4 @@
 import React from "react";
-import Title from "./Title";
-import FavoriteIcon from "@material-ui/icons/Favorite";
 import "../styles/PeopleInsprison.css";
 
 import tileImage1 from "../images/lp-features-1.webp";

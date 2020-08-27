@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../styles/Navbar.css";
-// import Logo from "../images/logo.webp";
-// import SidebarSm from "../components/SidebarSm";
 
 // Material stafs
 import DehazeIcon from "@material-ui/icons/Dehaze";
@@ -62,7 +60,9 @@ const Navbar = ({ toggleSidebar, toggleSidebarSm, openSidebarSm }) => {
         {/* Dialog */}
         <Dialog open={open} onClose={toggleDialog} className='modalDialog'>
           <div className='modalDialogContent'>
-            <div className='dialog-header'>Chaldal 🥚</div>
+            <div className='dialog-header'>
+              Chaldal <span role='img'>🥚</span>
+            </div>
             <ul>
               <li>
                 <ExitToAppIcon />
@@ -83,7 +83,12 @@ const Navbar = ({ toggleSidebar, toggleSidebarSm, openSidebarSm }) => {
             </ul>
           </div>
         </Dialog>
-        <a href='' alt='' className='helpAria'>
+        <a
+          href='https://majedulislam.co'
+          target='_blank'
+          rel='noopener noreferrer'
+          alt=''
+          className='helpAria'>
           <HelpIcon className='help-icon' />
           <span>Help & More</span>
         </a>

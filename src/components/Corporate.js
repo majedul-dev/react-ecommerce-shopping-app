@@ -1,6 +1,5 @@
 import React from "react";
 import "../styles/Corporate.css";
-import corporateBanner from "../images/banner-corporate-page.jpg";
 
 const Corporate = () => {
   return (

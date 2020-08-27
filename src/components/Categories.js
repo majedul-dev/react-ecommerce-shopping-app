@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "../styles/Categories.css";
 import Title from "./Title";
 import ProductCategories from "../constants/categories";

@@ -1,10 +1,7 @@
 // Product Images
-import offer1 from "../images/specialOffers/offer1.webp";
 import offer2 from "../images/specialOffers/offer-2.webp";
 import offer3 from "../images/specialOffers/offer-3.webp";
 import offer4 from "../images/specialOffers/offer-4.webp";
-import offer5 from "../images/specialOffers/offer-5.webp";
-import offer6 from "../images/specialOffers/offer-6.webp";
 import product1 from "../images/specialOffers/product-1.webp";
 import product2 from "../images/specialOffers/product-2.webp";
 import product3 from "../images/specialOffers/product-3.webp";
